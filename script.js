@@ -1,15 +1,12 @@
-var counter = document.getElementById('klir');
-var followers = document.querySelector('.followers');
-
 let count = 1;
 
 setInterval(() => {
-    if(count < 1000){
+    if (count < 1000) {
         count++;
-        counter.innerText = count;
+        document.getElementById('count').innerText = count;
     }
-}, 1)
+}, 10);
 
 setTimeout(() => {
-    followers.innerHTML = 'Followers in Github';
-}, 4000);
+    document.getElementById('followers').innerText = 'Followers in Github';
+}, 11100);
